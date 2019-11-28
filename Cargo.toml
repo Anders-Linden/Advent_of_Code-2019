@@ -1,0 +1,18 @@
+[package]
+name = "aoc2019"
+version = "0.1.0"
+authors = ["Anders Lindén <hello_world@anders.dev>"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+utilities = { path = "utilities" }
+
+[[bin]]
+name = "template"
+path = "src/template.rs"
+

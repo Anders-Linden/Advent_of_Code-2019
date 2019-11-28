@@ -1,0 +1,17 @@
+stages:
+  - test
+
+code_coverage:
+  stage: test
+  image: rust:1.38.0
+  before_script: []
+  script:
+    - apt-get update && apt-get install -y zip
+    - rustup override set nightly
+    - export CARGO_INCREMENTAL=0
+    - export RUSTFLAGS="-Zprofile -Ccodegen-units=1 -Cinline-threshold=0 -Clink-dead-code -Coverflow-checks=off -Zno-landing-pads"
+    - cargo test --bins
+    - cargo install grcov -f
+    - zip -0 ccov.zip `find . \( -name "*.gc*" \) -print`;
+    - grcov ccov.zip -s . -t lcov --llvm --branch --ignore-not-existing --ignore "/*" > lcov.info;
+    - bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN} -f lcov.info;
