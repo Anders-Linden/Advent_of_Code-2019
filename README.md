@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gl/linden/advent_of_code-2019/branch/master/graph/badge.svg)](https://codecov.io/gl/linden/advent_of_code-2019)
+[![codecov](https://codecov.io/gl/linden/advent-of-code-2019/branch/master/graph/badge.svg)](https://codecov.io/gl/linden/advent-of-code-2019)
 
 # Advent of code 2019
 
