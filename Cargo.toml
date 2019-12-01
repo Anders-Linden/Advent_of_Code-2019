@@ -16,3 +16,6 @@ utilities = { path = "utilities" }
 name = "template"
 path = "src/template.rs"
 
+[[bin]]
+name = "day_01"
+path = "src/day_01.rs"
