@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="Day_04"></a>
+## [Day_04] - 2019-12-05
+### New
+- Adding Day 4 solution
+
+
 <a name="Day_03"></a>
 ## [Day_03] - 2019-12-03
 ### New
@@ -23,6 +29,7 @@
 - Adding Day 1 solution
 
 
-[Unreleased]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_03...HEAD
+[Unreleased]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_04...HEAD
+[Day_04]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_03...Day_04
 [Day_03]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_02...Day_03
 [Day_02]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_01...Day_02
