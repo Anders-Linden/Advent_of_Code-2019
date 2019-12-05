@@ -9,6 +9,13 @@ opt-level = 0
 [profile.release]
 opt-level = 3
 
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "performance"
+harness = false
+
 [dependencies]
 utilities = { path = "utilities" }
 
@@ -31,3 +38,4 @@ path = "src/day_03.rs"
 [[bin]]
 name = "day_04"
 path = "src/day_04.rs"
+

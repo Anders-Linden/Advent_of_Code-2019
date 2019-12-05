@@ -14,7 +14,7 @@ fn calc_fuel_mass(mass: u32, sum: u32) -> u32 {
 	}
 }
 
-fn part1(data: &Vec<u32>) -> u32 {
+pub fn part1(data: &Vec<u32>) -> u32 {
 	let total_fuel: u32 = data
 		.into_iter()
 		.map(|x| calc_fuel(x.clone() as i32) as u32)
@@ -22,7 +22,7 @@ fn part1(data: &Vec<u32>) -> u32 {
 	return total_fuel;
 }
 
-fn part2(data: &Vec<u32>) -> u32 {
+pub fn part2(data: &Vec<u32>) -> u32 {
 	let total_fuel: u32 =
 		data.into_iter().map(|x| calc_fuel_mass(*x, 0) as u32).sum();
 

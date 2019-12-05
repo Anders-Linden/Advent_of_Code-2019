@@ -34,7 +34,7 @@ fn strict_doubles(digits: &Vec<u32>) -> bool {
 	false
 }
 
-fn part1(input: std::ops::Range<i32>) -> usize {
+pub fn part1(input: std::ops::Range<i32>) -> usize {
 	let passwords: Vec<Vec<u32>> = (input)
 		.map(|x| convert_to_digits(&x))
 		.filter(|digits| increasing_digit(digits))
@@ -44,7 +44,7 @@ fn part1(input: std::ops::Range<i32>) -> usize {
 	passwords.len()
 }
 
-fn part2(input: std::ops::Range<i32>) -> usize {
+pub fn part2(input: std::ops::Range<i32>) -> usize {
 	let tes2: Vec<Vec<u32>> = (input.clone())
 		.map(|x| convert_to_digits(&x))
 		.filter(|digits| increasing_digit(digits))
@@ -52,7 +52,6 @@ fn part2(input: std::ops::Range<i32>) -> usize {
 		.collect();
 	tes2.len()
 }
-
 fn main() {
 	println!("Results for template");
 	println!("-------------------");
@@ -62,7 +61,6 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-	use super::*;
 
 	#[test]
 	fn code_coverage_test_main() {
