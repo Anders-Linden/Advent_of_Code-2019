@@ -2,6 +2,18 @@
 ## [Unreleased]
 
 
+<a name="Day_05"></a>
+## [Day_05] - 2019-12-07
+### Feat
+- Adding Criterion.rs Benchmark framework
+
+### New
+- Adding Day 5 solution
+
+### Refactor
+- Benchmark clean up
+
+
 <a name="Day_04"></a>
 ## [Day_04] - 2019-12-05
 ### New
@@ -29,7 +41,8 @@
 - Adding Day 1 solution
 
 
-[Unreleased]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_04...HEAD
+[Unreleased]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_05...HEAD
+[Day_05]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_04...Day_05
 [Day_04]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_03...Day_04
 [Day_03]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_02...Day_03
 [Day_02]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_01...Day_02
