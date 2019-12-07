@@ -26,7 +26,7 @@ fn instruction_pipeline(int_code: &mut Vec<u32>) {
 	}
 }
 
-fn part1(int_code_str: &String) -> u32 {
+pub fn part1(int_code_str: &String) -> u32 {
 	let mut int_code: Vec<u32> = int_code_str
 		.split(',')
 		.map(|op_code_char| op_code_char.parse().unwrap())
@@ -40,7 +40,7 @@ fn part1(int_code_str: &String) -> u32 {
 	return int_code[0];
 }
 
-fn part2(int_code_str: &String) -> String {
+pub fn part2(int_code_str: &String) -> String {
 	let int_code: Vec<u32> = int_code_str
 		.split(',')
 		.map(|op_code_char| op_code_char.parse().unwrap())
