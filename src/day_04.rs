@@ -53,7 +53,7 @@ pub fn part2(input: std::ops::Range<i32>) -> usize {
 	tes2.len()
 }
 fn main() {
-	println!("Results for template");
+	println!("Results for Day 4");
 	println!("-------------------");
 	println!("Part 1: {}", part1(264_793..803_935));
 	println!("Part 2: {}", part2(264_793..803_935));
@@ -61,7 +61,7 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-
+	use super::*;
 	#[test]
 	fn code_coverage_test_main() {
 		assert_eq!(main(), ());

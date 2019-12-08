@@ -163,8 +163,6 @@ impl VmMachine {
 	fn logger(&mut self, data: isize) {
 		self.logger.push_str(&format!("{:?}\n", data).to_string());
 	}
-
-
 }
 
 fn part1_and_2(int_code_str: &String, interactive: bool) -> String {
@@ -200,5 +198,3 @@ fn main() -> std::io::Result<()> {
 
 	Ok(())
 }
-
-

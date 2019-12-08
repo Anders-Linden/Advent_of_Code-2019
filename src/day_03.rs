@@ -137,7 +137,7 @@ fn main() {
 	let wire_two = get_line(origin, &data[1]);
 
 	//println!("{} {} {}", index + index_two, index, index_two);
-	println!("Results for template");
+	println!("Results for Day 3");
 	println!("-------------------");
 	let (distance, manhattan_distances) = part1(origin, (&wire_one, &wire_two));
 	println!("Part 1: {}", distance);
