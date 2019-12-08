@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Fix
+- Changed url in changelog
+
 
 <a name="Day_06"></a>
 ## [Day_06] - 2019-12-08
@@ -47,9 +50,9 @@
 - Adding Day 1 solution
 
 
-[Unreleased]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_06...HEAD
-[Day_06]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_05...Day_06
-[Day_05]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_04...Day_05
-[Day_04]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_03...Day_04
-[Day_03]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_02...Day_03
-[Day_02]: https://gitlab.com/linden/advent_of_code-2018/compare/Day_01...Day_02
+[Unreleased]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_06...HEAD
+[Day_06]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_05...Day_06
+[Day_05]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_04...Day_05
+[Day_04]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_03...Day_04
+[Day_03]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_02...Day_03
+[Day_02]: https://gitlab.com/linden/advent-of-code-2019/compare/Day_01...Day_02

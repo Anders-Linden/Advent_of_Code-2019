@@ -2,7 +2,7 @@ style: gitlab
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://gitlab.com/linden/advent_of_code-2018
+  repository_url: https://gitlab.com/linden/advent-of-code-2019
 options:
   commits:
     # filters:
