@@ -1,5 +1,6 @@
 extern crate criterion;
 use std::io::prelude::*;
+extern crate permutator;
 extern crate utilities as utils;
 use criterion::{criterion_group, criterion_main, Criterion, Benchmark};
 
@@ -12,8 +13,10 @@ mod day_02;
 #[path = "../src/day_04.rs"]
 mod day_04;
 
-fn criterion_benchmark(c: &mut Criterion) {
+#[path = "../src/day_07.rs"]
+mod day_07;
 
+fn criterion_benchmark(c: &mut Criterion) {
 	let mut day_1_data: Vec<u32> = Vec::new();
 	for line in utils::open_input("./assets/input_day01").lines() {
 		day_1_data.push(line.unwrap().parse().unwrap())
@@ -58,6 +61,18 @@ fn criterion_benchmark(c: &mut Criterion) {
 		.with_function("Part 2", |b| b.iter(|| day_04::part2(264_793..803_935)))
 		.sample_size(10)
 		.measurement_time(std::time::Duration::new(10, 0)),
+	);
+
+	let mut day7_data: String = String::new();
+	utils::open_input("./assets/input_day07")
+		.read_line(&mut day7_data)
+		.unwrap();
+
+	c.bench(
+		"Day 7",
+		Benchmark::new("Part 1", move |b| b.iter(|| day_07::part1(&day7_data)))
+			.sample_size(10)
+			.measurement_time(std::time::Duration::new(10, 0)),
 	);
 }
 

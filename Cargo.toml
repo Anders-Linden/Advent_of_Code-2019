@@ -19,6 +19,7 @@ harness = false
 [dependencies]
 utilities = { path = "utilities" }
 petgraph = "0.4.13"
+permutator = "0.3.3"
 
 [[bin]]
 name = "template"
@@ -48,3 +49,6 @@ path = "src/day_05.rs"
 name = "day_06"
 path = "src/day_06.rs"
 
+[[bin]]
+name = "day_07"
+path = "src/day_07.rs"
