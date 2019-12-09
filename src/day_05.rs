@@ -1,6 +1,5 @@
 use std::io::prelude::*;
 extern crate utilities as utils;
-use std::io;
 use std::collections::VecDeque;
 
 fn part1_and_2(int_code_str: &String, interactive: bool) -> String {
@@ -10,7 +9,8 @@ fn part1_and_2(int_code_str: &String, interactive: bool) -> String {
 		.collect();
 
 	let mut dummy_heap = VecDeque::new();
-	let mut int_code_computer = utils::VmMachine::init(int_code, &mut dummy_heap);
+	let mut int_code_computer =
+		utils::VmMachine::init(int_code, &mut dummy_heap);
 	if !interactive {
 		int_code_computer.non_interactive();
 	}
@@ -19,6 +19,7 @@ fn part1_and_2(int_code_str: &String, interactive: bool) -> String {
 	return int_code_computer.get_logger();
 }
 
+#[cfg_attr(test, allow(dead_code))]
 fn main() -> std::io::Result<()> {
 	let mut int_code_string: String = String::new();
 	utils::open_input("./assets/input_day05")

@@ -52,6 +52,8 @@ pub fn part2(input: std::ops::Range<i32>) -> usize {
 		.collect();
 	tes2.len()
 }
+
+#[cfg_attr(test, allow(dead_code))]
 fn main() {
 	println!("Results for Day 4");
 	println!("-------------------");
@@ -61,6 +63,7 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
+	#[cfg_attr(test, allow(unused_imports))]
 	use super::*;
 	#[test]
 	fn code_coverage_test_main() {

@@ -29,6 +29,7 @@ pub fn part2(data: &Vec<u32>) -> u32 {
 	return total_fuel;
 }
 
+#[cfg_attr(test, allow(dead_code))]
 fn main() {
 	let mut data: Vec<u32> = Vec::new();
 	for line in utils::open_input("./assets/input_day01").lines() {
@@ -43,6 +44,7 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
+	#[cfg_attr(test, allow(unused_imports))]
 	use super::*;
 
 	#[test]

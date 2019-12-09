@@ -65,6 +65,7 @@ pub fn part2(int_code_str: &String) -> String {
 	return format!("Error");
 }
 
+#[cfg_attr(test, allow(dead_code))]
 fn main() -> std::io::Result<()> {
 	let mut int_code_string: String = String::new();
 	utils::open_input("./assets/input_day02")
@@ -80,6 +81,7 @@ fn main() -> std::io::Result<()> {
 
 #[cfg(test)]
 mod tests {
+	#[cfg_attr(test, allow(unused_imports))]
 	use super::*;
 
 	#[test]

@@ -1,7 +1,7 @@
-use std::fs::File;
-use std::io::BufReader;
-use std::io;
 use std::collections::VecDeque;
+use std::fs::File;
+use std::io;
+use std::io::BufReader;
 
 pub fn open_input(file_path: &str) -> std::io::BufReader<std::fs::File> {
 	let file = match File::open(file_path) {
@@ -11,25 +11,27 @@ pub fn open_input(file_path: &str) -> std::io::BufReader<std::fs::File> {
 	BufReader::new(file)
 }
 
-
 pub struct VmMachine<'a> {
 	memory: Vec<isize>,
 	program_counter: usize,
 	logger: String,
 	auto: bool,
 	pub diagnostic_input: &'a mut VecDeque<isize>,
-	diagnostic_output: isize
+	diagnostic_output: isize,
 }
 
 impl<'a> VmMachine<'a> {
-	pub fn init(memory: Vec<isize>, input_heap: &'a mut VecDeque<isize>) -> Self {
+	pub fn init(
+		memory: Vec<isize>,
+		input_heap: &'a mut VecDeque<isize>,
+	) -> Self {
 		Self {
 			memory,
 			program_counter: 0,
 			logger: "".to_string(),
 			auto: false,
 			diagnostic_input: input_heap,
-			diagnostic_output: 0
+			diagnostic_output: 0,
 		}
 	}
 
@@ -174,7 +176,7 @@ impl<'a> VmMachine<'a> {
 		self.step(2);
 	}
 	pub fn get_memory(&self) -> Vec<isize> {
-		return self.memory.to_vec()
+		return self.memory.to_vec();
 	}
 
 	pub fn get_logger(&self) -> String {

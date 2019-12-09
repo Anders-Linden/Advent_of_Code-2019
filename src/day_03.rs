@@ -126,6 +126,7 @@ fn part2(
 	return *step;
 }
 
+#[cfg_attr(test, allow(dead_code))]
 fn main() {
 	let mut data: Vec<String> = Vec::new();
 	for line in utils::open_input("./assets/input_day03").lines() {
@@ -149,6 +150,7 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
+	#[cfg_attr(test, allow(unused_imports))]
 	use super::*;
 
 	#[test]
